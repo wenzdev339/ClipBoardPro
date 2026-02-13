@@ -1,0 +1,77 @@
+{
+  "name": "ClipBoardPro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Advanced clipboard management tool for enhanced productivity",
+  "author": {
+    "name": "WENZ GAME",
+    "email": "wenzgamedeveloper@gmail.com"
+  },
+  "type": "module",
+  "main": "src/electron/main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev:react": "vite",
+    "electron": "npm run build && electron .",
+    "build": "vite build",
+    "dist": "npm run build && electron-builder",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:win": "npm run build && electron-builder --win",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.536.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "electron": "^37.2.4",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "sass-embedded": "^1.89.2",
+    "vite": "^5.4.10"
+  },
+  "build": {
+    "appId": "com.clipboardpro.app",
+    "productName": "ClipBoardPro",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist-react/**/*",
+      "src/electron/**/*",
+      "node_modules/**/*"
+    ],
+    "extraMetadata": {
+      "main": "src/electron/main.js"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "dist-react/images/ClipBoardPro_Logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/ClipBoardPro_Logo.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/ClipBoardPro_Logo.png"
+    }
+  }
+}

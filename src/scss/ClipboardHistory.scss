@@ -1,0 +1,111 @@
+.clipboard-history {
+  .items-container {
+    padding: var(--spacing-md) 0;
+
+    &.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-md);
+
+      @media (max-width: 799px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+      }
+
+      @media (max-width: 520px) {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+      }
+    }
+
+    &.list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-sm);
+      max-width: 900px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        gap: var(--spacing-xs);
+      }
+    }
+  }
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  min-height: 50vh;
+  background: none;
+  border-radius: var(--radius-xl);
+  border: none; 
+  backdrop-filter: none;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: 40vh;
+  }
+
+  @media (max-width: 480px) {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: 30vh;
+  }
+
+.empty-icon {
+  all: unset;
+  font-size: 3.5rem;
+  opacity: 0.4;
+  color: var(--text-muted);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  filter: grayscale(1);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+  .empty-title {
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    @media (max-width: 480px) {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  .empty-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    max-width: 400px;
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 0;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-xs);
+      max-width: 320px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 280px;
+    }
+  }
+}
+
+}
