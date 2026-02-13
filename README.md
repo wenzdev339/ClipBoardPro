@@ -8,6 +8,16 @@ Beta 1.0.0
 
 ---
 
+## Preview
+
+![Preview 1](./Readme/p1.png)
+![Preview 1](./Readme/p2.png)
+![Preview 1](./Readme/p3.png)
+![Preview 1](./Readme/p4.png)
+![Preview 1](./Readme/p5.png)
+
+---
+
 ## Why This Exists
 
 Every developer copies and pastes dozens of things a day. Most of it vanishes the moment you copy something new. ClipBoard Pro fixes that. It runs quietly in the background, stores your clipboard history locally, and lets you recall or re-copy any previous entry with a single click.
@@ -190,8 +200,12 @@ You may not use, distribute, or incorporate this software or any portion of it i
 
 You are free to fork, modify, and share this project for personal use, educational purposes, and open source contributions, provided the same non-commercial restriction is preserved.
 
+See the [LICENSE](LICENSE) file for the full terms.
+
 ---
 
 ## Support
 
 If you find this project useful, consider supporting development through [Ko-fi](https://ko-fi.com/wenzdev).
+
+For bugs and feature requests, use the [issue tracker](https://github.com/your-username/clipboard-pro/issues).
