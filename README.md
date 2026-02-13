@@ -84,7 +84,7 @@ This launches the Electron app in development mode with hot reload enabled for t
 npm run build
 ```
 
-Output binaries will be placed in the `dist/` directory. Platform-specific packaging is handled by Electron Builder — see `electron-builder.yml` (or the relevant config in `package.json`) for target configuration.
+Output binaries will be placed in the `dist/` directory. Platform-specific packaging is handled by Electron Builder see `electron-builder.yml` (or the relevant config in `package.json`) for target configuration.
 
 ---
 
