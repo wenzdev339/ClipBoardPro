@@ -200,12 +200,8 @@ You may not use, distribute, or incorporate this software or any portion of it i
 
 You are free to fork, modify, and share this project for personal use, educational purposes, and open source contributions, provided the same non-commercial restriction is preserved.
 
-See the [LICENSE](LICENSE) file for the full terms.
-
 ---
 
 ## Support
 
 If you find this project useful, consider supporting development through [Ko-fi](https://ko-fi.com/wenzdev).
-
-For bugs and feature requests, use the [issue tracker](https://github.com/your-username/clipboard-pro/issues).
