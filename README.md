@@ -151,7 +151,7 @@ The active language persists across sessions.
 
 ## Clipboard Handling
 
-When you copy an entry from within ClipBoard Pro back to your system clipboard, the app temporarily pauses its own clipboard monitor for 3 seconds to avoid re-capturing the same content as a new entry. This is handled automatically — no user intervention required.
+When you copy an entry from within ClipBoard Pro back to your system clipboard, the app temporarily pauses its own clipboard monitor for 3 seconds to avoid re-capturing the same content as a new entry. This is handled automatically no user intervention required.
 
 Image entries are stored as base64 data URIs. For large images, be aware that this increases memory and storage usage proportionally.
 
