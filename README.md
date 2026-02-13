@@ -1,6 +1,6 @@
 # ClipBoard Pro
 
-A lightweight, cross-platform clipboard manager built with Electron and React. It sits in your system tray, watches your clipboard, and keeps a searchable history of everything you copy — text, code snippets, and images.
+A lightweight, cross-platform clipboard manager built with Electron and React. It sits in your system tray, watches your clipboard, and keeps a searchable history of everything you copy text, code snippets, and images.
 
 Beta 1.0.0
 
